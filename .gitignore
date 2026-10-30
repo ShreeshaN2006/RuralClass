@@ -1,0 +1,21 @@
+node_modules/
+dist/
+coverage/
+*.local
+*.log
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tsbuildinfo
+
+# AI Studio / agent scratch data
+.aistudio/
+.freebuff/
