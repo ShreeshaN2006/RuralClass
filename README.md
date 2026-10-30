@@ -17,7 +17,7 @@ RuralClass brings timetabling, lesson planning, classroom delivery, attendance, 
 
 Built for rural primary schools in Karnataka, with a full **English / ಕನ್ನಡ** interface and a deterministic, explainable recommendation engine. No backend, API keys or network connection required for the demo.
 
-**Hackathon pitch deck:** [PDF](pitch/RuralClass_Pitch_Deck.pdf) · [editable PPTX](pitch/RuralClass_Pitch_Deck.pptx) · [speaker notes and 3-minute route](pitch/README.md)
+**Hackathon pitch deck (six pages, one per judging criterion):** [PDF](pitch/RuralClass_Pitch_Deck.pdf) · [editable PPTX](pitch/RuralClass_Pitch_Deck.pptx) · [page map and 3-minute route](pitch/README.md)
 
 > **Hackathon prototype.** All names, schools and learner records are fictional demo data. See [Demo data & scope](#demo-data--scope) before evaluating it as a production system.
 
