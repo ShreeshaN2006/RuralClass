@@ -32,6 +32,7 @@ Built for rural primary schools in Karnataka, with a full **English / ಕನ್�
 - [Architecture](#architecture)
 - [Tech stack](#tech-stack)
 - [Getting started](#getting-started)
+- [Deployment](#deployment)
 - [Demo accounts](#demo-accounts)
 - [Tests and checks](#tests-and-checks)
 - [Project structure](#project-structure)
@@ -250,6 +251,33 @@ npm run typecheck   # TypeScript, no emit
 npm test            # engine tests
 npm run check       # typecheck + tests
 ```
+
+---
+
+## Deployment
+
+RuralClass is a static site: `npm run build` produces a self-contained `dist/` folder that can be served from any static host.
+
+### Render
+
+The repository includes a [Render Blueprint](render.yaml) that configures the build, publish directory and SPA fallback:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ShreeshaN2006/RuralClass)
+
+To create the service manually, use these settings:
+
+| Setting | Value |
+| --- | --- |
+| Service type | Static Site |
+| Branch | `main` |
+| Build command | `npm ci && npm run build` |
+| Publish directory | `dist` |
+
+Every push to `main` then triggers a new deploy. No environment variables or secrets are required.
+
+### Other static hosts
+
+Upload the contents of `dist/` after `npm run build`. For single-page hosting, rewrite unknown paths to `/index.html` so the app shell always loads.
 
 ---
 
